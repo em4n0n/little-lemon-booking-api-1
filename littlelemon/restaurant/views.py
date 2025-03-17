@@ -26,6 +26,7 @@ def book(request):
 # Add code for the bookings() view
 def bookings(request):
     date = request.GET.get('date', datetime.today().date())
+    bookings = Booking.objects.all()
 
 
 def menu(request):
